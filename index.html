@@ -262,8 +262,9 @@
 
     // Simulación de envío (luego conecta con Airtable/Stripe)
     function demoSend(){
-      const form = document.getElementById('leadForm');
-      const data = Object.fromEntries(new FormData(form).entries());
+  const AIRTABLE_TOKEN = patH0NWLoyYQS42r3.42927c00d04921216b7920c98d7fe3b180df9ce7061155d497690ab4f31240dd
+const AIRTABLE_BASE  = appngv6xEUtVkwDLS
+const AIRTABLE_TABLE = Leads SAMI
       alert('¡Gracias, ' + (data.nombre||'') + '! Te contactaremos para tu demo de SAMI.');
       form.reset();
     }
